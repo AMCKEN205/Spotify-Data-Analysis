@@ -1,0 +1,54 @@
+columns should be (ordered):
+- Artist
+- Position
+- Streams
+- Track Name
+- Week
+- album
+- artist_top_genre
+- release_date 
+- length
+- popularity
+- danceability
+- acousticnesspip 
+- energy
+- instrumentalness
+- liveness
+- loudness
+- speechiness
+- tempo
+- time_signature
+
+uk data files already contain
+- Artist
+- Position
+- Streams
+- Track Name
+- URL
+(in that order)
+
+from base get an artist can get
+- genres, just take first for artist_top_genre
+
+from base get a track can get
+- album
+- release_date
+- length
+- popularity
+
+from audio features on a track can get
+- danceability
+- acousticness
+- energy
+- instrumentalness
+- liveness
+- loudness
+- speechiness
+- tempo
+- time_signature
+
+extra details
+
+URL contains track id which will need to be used to get data from the spotify API. Remove when putting in new data file.
+Length is in milliseconds.
+Week already in datafiles.
